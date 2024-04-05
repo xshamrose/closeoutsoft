@@ -1,0 +1,17 @@
+/* circle {
+  transition: stroke-dasharray 0.5s;
+} */
+@keyframes drawSlice {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.pie-slice {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 80;
+  animation: drawSlice 2s linear forwards;
+}
